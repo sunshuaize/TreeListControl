@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\CustomTabControl\TabControlDemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomTabControl\TabControlDemoForm.Designer.cs">
+      <DependentUpon>TabControlDemoForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\CustomTabControl\TabControlDemoForm.resx">
+      <DependentUpon>TabControlDemoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Controls\CustomTable\CheckBoxColumn.cs" />
     <Compile Include="Controls\CustomTable\CustomColumn.cs" />
     <Compile Include="Controls\CustomTable\CustomColumnCollection.cs" />
@@ -62,6 +71,12 @@
     <Compile Include="Controls\CustomTable\LinkLabelsColumn.cs" />
     <Compile Include="Controls\CustomTable\StatusColumn.cs" />
     <Compile Include="Controls\TreeListControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomTabControl\CustomTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomTabControl\TabPage.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Form1.cs">
