@@ -14,11 +14,52 @@ namespace demo
     public partial class Form1 : Form
     {
         private TreeListControl treeList;
+        private IconLabelButton iconButton1;
+        private IconLabelButton iconButton2;
+        private IconLabelButton iconButton3;
 
         public Form1()
         {
             InitializeComponent();
-            InitTreeList();
+            //InitTreeList();
+            InitIconButtons();
+        }
+
+        private void InitIconButtons()
+        {
+            int startX = 10;
+            int startY = 10;
+            int spacing = 60;
+
+            iconButton1 = new IconLabelButton
+            {
+                Location = new Point(startX, startY),
+                Text = "文件",
+                Size = new Size(48, 48)
+            };
+            iconButton1.LoadIconFromFile(AppDomain.CurrentDomain.BaseDirectory + "Icons\\folder_blue.png");
+            iconButton1.Clicked += (s, e) => MessageBox.Show("点击了: 文件");
+            this.Controls.Add(iconButton1);
+
+            iconButton2 = new IconLabelButton
+            {
+                Location = new Point(startX + spacing, startY),
+                Text = "文档",
+                Size = new Size(48, 43)
+            };
+            iconButton2.LoadIconFromFile(AppDomain.CurrentDomain.BaseDirectory + "Icons\\file_blue.png");
+            iconButton2.Clicked += (s, e) => MessageBox.Show("点击了: 文档");
+            this.Controls.Add(iconButton2);
+
+            iconButton3 = new IconLabelButton
+            {
+                Location = new Point(startX + spacing * 2, startY),
+                Text = "设置",
+                Size = new Size(48, 43)
+            };
+            iconButton3.LoadIconFromFile(AppDomain.CurrentDomain.BaseDirectory + "Icons\\folder_gray.png");
+            iconButton3.Clicked += (s, e) => MessageBox.Show("点击了: 设置");
+            this.Controls.Add(iconButton3);
         }
 
         private void InitTreeList()

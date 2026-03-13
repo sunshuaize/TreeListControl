@@ -73,6 +73,9 @@
     <Compile Include="Controls\TreeListControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\IconLabelButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\CustomTabControl\CustomTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
