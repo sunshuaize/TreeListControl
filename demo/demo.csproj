@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\CustomTable\CheckBoxColumn.cs" />
+    <Compile Include="Controls\CustomTable\CustomColumn.cs" />
+    <Compile Include="Controls\CustomTable\CustomColumnCollection.cs" />
+    <Compile Include="Controls\CustomTable\CustomTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomTable\CustomTableAllFeaturesDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomTable\CustomTableAllFeaturesDemo.Designer.cs">
+      <DependentUpon>CustomTableAllFeaturesDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomTable\CustomTableEventArgs.cs" />
+    <Compile Include="Controls\CustomTable\LinkLabelsColumn.cs" />
+    <Compile Include="Controls\CustomTable\StatusColumn.cs" />
     <Compile Include="Controls\TreeListControl.cs">
       <SubType>Component</SubType>
     </Compile>
